@@ -71,7 +71,7 @@ git clone https://github.com/CeeWeasel/kickstart.nvim.git "${XDG_CONFIG_HOME:-$H
 ```
 
 ```sh
-git clone https://gitea.clintweaver.com/clevergit/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://gitea.clintweaver.com/clevergit/kickstart.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -85,7 +85,7 @@ git clone https://github.com/CeeWeasel/kickstart.nvim.git "${env:LOCALAPPDATA}\n
 ```
 
 ```
-git clone https://gitea.clintweaver.com/clevergit/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://gitea.clintweaver.com/clevergit/kickstart.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
