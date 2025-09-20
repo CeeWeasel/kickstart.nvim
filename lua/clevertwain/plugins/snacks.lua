@@ -41,4 +41,13 @@ return {
       },
     },
   },
+  keys = function()
+    local snacks = require 'snacks'
+    return {
+      {
+        '<leader>oe',
+        snacks.picker.explorer,
+      },
+    }
+  end,
 }
