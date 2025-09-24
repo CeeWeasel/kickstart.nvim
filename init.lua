@@ -209,6 +209,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
+vim.keymap.set('n', '<M-h>', '<cmd>silent !tmux neww tmux-sessionizer -s 0<CR>')
+vim.keymap.set('n', '<M-t>', '<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>')
+vim.keymap.set('n', '<M-n>', '<cmd>silent !tmux neww tmux-sessionizer -s 2<CR>')
+vim.keymap.set('n', '<M-s>', '<cmd>silent !tmux neww tmux-sessionizer -s 3<CR>')
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -772,6 +777,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        go = { 'gofmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
